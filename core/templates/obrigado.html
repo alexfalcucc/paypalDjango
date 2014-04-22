@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="<col-sm-12" style='text-align: center;'>
+            
+            <div class="container">
+            {% if messages %}
+            <div class="row">
+            <div class="col-sm-6 col-sm-offset-3" style='text-align: center;'>
+            {% for message in messages %}
+            <p{% if message.tags == "success" %} class="alert alert-success" style='text-align: center;' {% endif %}>{{ message }}</p>
+            {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            <h1 style="font-size: 36px;margin-top: 70px;
+                    margin-bottom: 10px;"> Insira os dados e me envie um e-mail.  </h1>
+            <form method="POST" action=""> {% csrf_token %}
+            {{ form.as_p }}
+                <button type="submit" class="btn btn-success">Enviar <span class="glyphicon glyphicon-envelope"></span></button>
+        
+            
+            </form>
+        
+
+
+</div>
+
+
+{% endblock %}

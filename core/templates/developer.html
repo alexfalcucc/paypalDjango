@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+	<div class="jumbotron" style="background-color: #609E71;
+color: #FCFCFC;padding-top: 50px;
+  padding-bottom: 20px;">
+      <div class="container">
+      <div class="col-sm-6" style="margin: 20px -10px 0px;">
+          <img src='http://m.c.lnkd.licdn.com/media/p/6/005/04d/15f/26b12f2.jpg' class='img-responsive' style="width: 350px;">
+        </div>
+      <div class="col-sm-6" style="margin: 40px -90px 10px;">
+        <h1>Desenvolvedor</h1>
+        <p>Alexsander Falcucci cursa o último período de Bacharel em Sistemas de Informação na Universidade de Franca Cruzeiro do Sul, é apaixonado por programação e seus derivados. Atualmente dedica seu tempo prioritariamente aos estudos, freelances e projetos pessoais.</p>
+        <p><a href='{% url "obrigado" %}' class="btn btn-primary btn-lg" role="button">Enviar Mensagem</a></p>
+        </div>
+        
+      </div>
+
+      
+    </div>
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="col-sm-3">
+          <h2>Python.Org</h2>
+          <p><img src='http://www.greenitbrasil.com.br/wp-content/uploads/2012/10/python_logo.jpg' class='img-responsive'>Este site foi desenvolvido em Python e Django. </p>
+          <p><a class="btn btn-default" href="http://www.python.org.br/wiki" role="button">Vesualizar Documentação</a></p>
+        </div>
+        <div class="col-sm-3">
+          <h2>Django Brasil</h2>
+          <p><img src="http://www.arruda.blog.br/wp-content/uploads/2011/12/django.png" class='img-responsive'>Site desenvolvido em python e Django.</p>
+          <p><a class="btn btn-default" href="http://www.djangobrasil.org/" role="button">Visualizar Documentação</a></p>
+       </div>
+        <div class="col-sm-3">
+          <h2>Artigos</h2>
+          <p><script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@alexfalcucci">Alexsander Falcucci S.</a></p>
+          <p><a class="btn btn-default" href="https://medium.com/@alexfalcucci" role="button"> Visualizar Artigos</a></p>
+          
+        </div>
+        <div class="col-sm-3">
+        <h1>PayPal</h1>
+        <p>Paypal utilizado apenas como uso didático.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FU4TTPT5YXXZE">
+<input type="hidden" name="on0" value="Help">
+<select class="form-control" name="os0">
+    <option value="Basic">Basic R$99,00</option>
+    <option value="Basic +">Basic + R$149,00</option>
+    <option value="premium">premium R$199,00</option>
+</select> 
+<input type="hidden" name="currency_code" value="BRL"></br>
+    <input type="submit" value="Comprar" class="btn btn-warning btn-block">
+
+</form>
+
+
+</div>
+
+{% endblock %}

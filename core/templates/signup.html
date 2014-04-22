@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block jumbotron %}
+     <div class="jumbotron" style="background-color: #311308;
+color: #FCFCFC;padding-top: 50px;
+  padding-bottom: 20px;">
+      <div class="container">
+       <div class="col-sm-6" style="margin: 55px 0px 75px;">
+        <h1>Bem vindo!</h1>
+        <p>Meu nome é Alexsander Falcucci e este é um site pessoal desenvolvido por um framework Django, que contém estrutura interna completa em Python.</p>
+        </div>
+        <div class="col-sm-6" style="margin: 50px 0px 0px;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Hq0tPjdfHME" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% endblock %}
+
+{% block content %}
+<div class="col-sm-3">
+          <h2>Python.Org</h2>
+          <p><img src='http://www.greenitbrasil.com.br/wp-content/uploads/2012/10/python_logo.jpg' class='img-responsive'>Este site foi desenvolvido em Python e Django. </p>
+          <p><a class="btn btn-default" href="http://www.python.org.br/wiki" role="button" target="_blank">Vesualizar Documentação</a></p>
+        </div>
+        <div class="col-sm-3">
+          <h2>Django Brasil</h2>
+          <p><img src="http://www.arruda.blog.br/wp-content/uploads/2011/12/django.png" class='img-responsive'>Site desenvolvido em python e Django.</p>
+          <p><a class="btn btn-default" href="http://www.djangobrasil.org/" role="button" target="_blank">Visualizar Documentação</a></p>
+       </div>
+        <div class="col-sm-3">
+          <h2>Artigos</h2>
+          <p><script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@alexfalcucci">Alexsander Falcucci S.</a></p>
+          <p><a class="btn btn-default" href="https://medium.com/@alexfalcucci" role="button" target="_blank"> Visualizar Artigos</a></p>
+          
+        </div>
+        <div class="col-sm-3">
+        <h1>PayPal</h1>
+        <p>Paypal utilizado apenas como uso didático.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FU4TTPT5YXXZE">
+<input type="hidden" name="on0" value="Help">
+<select class="form-control" name="os0">
+    <option value="Basic">Basic R$99,00</option>
+    <option value="Basic +">Basic + R$149,00</option>
+    <option value="premium">premium R$199,00</option>
+</select> 
+<input type="hidden" name="currency_code" value="BRL"></br>
+    <input type="submit" value="Comprar" class="btn btn-warning btn-block" target="_blank">
+
+</form>
+
+
+</div>
+        
+
+{% endblock %}
